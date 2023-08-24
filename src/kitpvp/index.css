@@ -1,0 +1,149 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,
+    Arial, sans-serif;
+  margin: 0;
+}
+.show-user{
+  font-size: 30px;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(51, 255, 0);
+  box-shadow: 0px 0px 20px 20px rgb(51, 255, 0);
+  display: block;
+}
+
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: opacity 3s;
+}
+*{
+  margin: 0%;
+  font-family: 'Verdana', sans-serif;
+}
+.top{
+  background-color: black;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.mittel{
+  background: url(../images/bg.png);
+  width: 100%;
+  height: 70%;
+  background-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.bottom{
+  width: 100%;
+  height: 15%;
+  background-color: black;
+}
+.top-l{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 1000;
+}
+.top-b-d{
+  padding-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.p-l{
+  padding: 15%;
+}
+.dw-b-d{
+  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.dw-b-d-{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.dw-b{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 1000;
+  background-color: rgb(51, 255, 0);
+  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-left-color: black;
+  transition: 500ms;
+  
+  box-shadow: 0px 0px 20px 3px rgb(51, 255, 0);
+}
+#deaths{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+#kills{
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+
+
+.dw-b:hover{
+
+box-shadow: 0px 0px 20px 10px rgb(51, 255, 0);
+  background-color: rgb(51, 255, 0);
+}
+.im{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 1000;
+}
+.main2{
+  background-image: url(../images/bg.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: opacity 3s;
+  background-position: 50% 50%;
+
+}
+.change-position{
+  position: fixed;
+  left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 1000;
+  background-color: aqua;
+  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-left-color: black;
+  transition: 500ms;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 3px aqua;
+}

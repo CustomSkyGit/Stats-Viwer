@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>KitPVP</title>
+</head>
+<body>
+
+  <body> 
+    <div id="main2" class="main2"> 
+    </div>
+        <div class="main" id="main">
+            <div class="top">
+                <div class="top-b-d">
+  
+                  <a href="../home.html" class="top-l change-position">HOME</a>
+                    <h1 onclick="changeUserScreen()" id="show-username" class="show-user "></h1> 
+                  
+                </div>
+                
+            </div>
+            <div class="mittel">
+                <div class="dw-b-d">
+                  <h1 id="deaths"  class="dw-b"></h1>
+                  <h1 id="kills"  class="dw-b"></h1>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="" class="im"> </a>
+            </div>
+        </div>
+        
+  </body>
+
+  
+</body>
+<script>
+
+getUsername();
+  function getUsername(){
+  const storedUsername = localStorage.getItem("currentUsername");
+
+  if (storedUsername) {
+    document.getElementById("show-username").innerText = storedUsername;
+
+    fetch(`https://api.customsky.net/api/stats/${storedUsername}`)
+    .then(response => response.json())
+    .then(data =>{
+      if(data.kitpvp.deaths){
+        document.getElementById("deaths").innerText = "Deaths: " + data.kitpvp.deaths;
+        document.getElementById("kills").innerText = "Kills: " + data.kitpvp.kills + " K/D: " + data.kitpvp.kills / data.kitpvp.deaths;
+      } else {
+        document.getElementById("deaths").innerText = "This Player Has Nerver Played KitPvP";
+        document.getElementById("kills").innerText = "or Somting went wrong";
+      }
+        
+
+        document.getElementById("username-show").innerText = username;
+        
+    })
+  } else {
+    alert("Somting went rong Restart The App");
+  }
+}
+
+  
+  
+</script>
+</html>
